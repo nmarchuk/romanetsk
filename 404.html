@@ -1,0 +1,18 @@
+---
+permalink: /404.html
+title: not found
+eleventyExcludeFromCollections: true
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="0; url={{ '/' | url }}">
+        <link rel="canonical" href="{{ '/' | url }}">
+        <title>Redirecting… | New Species Podcast</title>
+        <script>window.location.replace({{ '/' | url | json }});</script>
+    </head>
+    <body>
+        <p>This page doesn't exist. <a href="{{ '/' | url }}">Returning home…</a></p>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+{%- comment -%}
+Emits no blank lines, so this survives being included from a markdown page.
+{%- endcomment -%}
+<svg class="map" viewBox="0 0 {{ map.width }} {{ map.height }}" role="img" aria-label="Map of connected locations">
+{%- for edge in map.edges %}
+    <g class="map-edge-group">
+        <line class="map-hit" x1="{{ edge.x1 }}" y1="{{ edge.y1 }}" x2="{{ edge.x2 }}" y2="{{ edge.y2 }}"></line>
+        <line class="map-edge" x1="{{ edge.x1 }}" y1="{{ edge.y1 }}" x2="{{ edge.x2 }}" y2="{{ edge.y2 }}"></line>
+        {%- if edge.label %}
+        <text class="map-edge-label" x="{{ edge.mx }}" y="{{ edge.my }}">{{ edge.label }}</text>
+        {%- endif %}
+    </g>
+{%- endfor %}
+{%- for node in map.nodes %}
+    {%- if node.url %}
+    <a href="{{ node.url | url }}">
+    {%- endif %}
+    <circle class="map-hit" cx="{{ node.x }}" cy="{{ node.y }}" r="6"></circle>
+    <circle class="map-node" cx="{{ node.x }}" cy="{{ node.y }}" r="2"></circle>
+    <text class="map-label" x="{{ node.x }}" y="{{ node.y | plus: 6 }}">{{ node.label }}</text>
+    {%- if node.url %}
+    </a>
+    {%- endif %}
+{%- endfor %}
+</svg>

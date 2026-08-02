@@ -1,0 +1,148 @@
+media:
+  input: assets
+  output: /assets
+  categories: [image]
+
+content:
+  # ---------------------------------------------------------------------------
+  # Diaries
+  # ---------------------------------------------------------------------------
+  - name: diaries
+    label: Diaries
+    type: collection
+    path: diaries
+    format: yaml-frontmatter
+    filename: "{fields.title}.md"
+    exclude: ["diaries.json"]
+    view:
+      primary: title
+      fields: [title]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: body
+        label: Entry
+        type: text
+        description: Markdown. You can use a shortcode like {% npc "romanetsk/mustafar_khanakin" %} to link to another place, npc, or event.
+
+  # ---------------------------------------------------------------------------
+  # Quests
+  # ---------------------------------------------------------------------------
+  - name: quests
+    label: Quests
+    type: collection
+    path: quests
+    format: yaml-frontmatter
+    filename: "{fields.title}.md"
+    exclude: ["quests.json"]
+    view:
+      primary: title
+      fields: [title, completed]
+      sort: [title, completed]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: completed
+        label: Completed
+        type: boolean
+        description: Completed quests drop to the bottom of the sidebar list, struck through.
+      - name: body
+        label: Description
+        type: text
+        description: Markdown. You can use a shortcode like {% npc "romanetsk/mustafar_khanakin" %} to link to another place, npc, or event.
+
+  # ---------------------------------------------------------------------------
+  # Romanetsk. To add another location, copy these four entries and swap
+  # "romanetsk" for the new location's folder name in every path and name.
+  # ---------------------------------------------------------------------------
+  - name: romanetsk_overview
+    label: "Romanetsk: Overview"
+    type: file
+    path: locations/romanetsk.md
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: body
+        label: Overview
+        type: text
+        description: Markdown. Appears in the first panel of the location page.
+
+  - name: romanetsk_npcs
+    label: "Romanetsk: NPCs"
+    type: collection
+    path: locations/romanetsk/npcs
+    format: yaml-frontmatter
+    filename: "{fields.title}.md"
+    exclude: ["npcs.json"]
+    view:
+      primary: title
+      fields: [title, image]
+    fields:
+      - name: title
+        label: Name
+        type: string
+        required: true
+      - name: image
+        label: Portrait
+        type: image
+        description: Optional. Floats to the right of the NPC's description.
+      - name: body
+        label: Description
+        type: text
+
+  - name: romanetsk_places
+    label: "Romanetsk: Places"
+    type: collection
+    path: locations/romanetsk/places
+    format: yaml-frontmatter
+    filename: "{fields.title}.md"
+    exclude: ["places.json"]
+    view:
+      primary: title
+      fields: [title]
+    fields:
+      - name: title
+        label: Name
+        type: string
+        required: true
+      - name: body
+        label: Description
+        type: text
+
+  - name: romanetsk_events
+    label: "Romanetsk: Events"
+    type: collection
+    path: locations/romanetsk/events
+    format: yaml-frontmatter
+    filename: "{fields.title}.md"
+    exclude: ["events.json"]
+    view:
+      primary: title
+      fields: [order, year, title]
+      sort: [order, year, title]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: year
+        label: Year
+        type: number
+        description: Shown before the title on the location page. Display only.
+      - name: order
+        label: Order
+        type: number
+        description: Low to high. This is what actually sorts the timeline.
+      - name: body
+        label: Description
+        type: text

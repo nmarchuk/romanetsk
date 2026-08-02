@@ -1,0 +1,57 @@
+---
+layout: blog_layout.html
+content_class: sections
+---
+{% assign npcs_key = page.fileSlug | append: "_npcs" %}
+{% assign places_key = page.fileSlug | append: "_places" %}
+{% assign events_key = page.fileSlug | append: "_events" %}
+{% assign npcs = collections[npcs_key] %}
+{% assign places = collections[places_key] %}
+{% assign events = collections[events_key] | sort: "data.order" %}
+
+<div class="panel">
+    <h1>{{ title }}</h1>
+    {{ content }}
+</div>
+
+{% if places.size > 0 %}
+<div class="panel">
+    <h2>Important Places</h2>
+    {% for place in places %}
+        <div class="entry" id="place-{{ place.fileSlug }}">
+            <h3>{{ place.data.title }}</h3>
+            {{ place.templateContent }}
+        </div>
+    <hr>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if npcs.size > 0 %}
+<div class="panel">
+    <h2>NPCs</h2>
+    {% for npc in npcs %}
+        <div class="entry" id="npc-{{ npc.fileSlug }}">
+            {% if npc.data.image %}
+                <img class="entry-image" src="{{ npc.data.image | url }}" alt="{{ npc.data.title }}">
+            {% endif %}
+            <h3>{{ npc.data.title }}</h3>
+            {{ npc.templateContent }}
+        </div>
+        <hr>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if events.size > 0 %}
+<div class="panel">
+    <h2>Events</h2>
+    {% for event in events %}
+        <div class="entry" id="event-{{ event.fileSlug }}">
+            <h3>{{ event.data.year }}: {{ event.data.title }}</h3>
+            {{ event.templateContent }}
+        </div>
+    <hr>
+    {% endfor %}
+</div>
+{% endif %}

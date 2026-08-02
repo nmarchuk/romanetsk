@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root {
+    --a-color: #c3bedf;
+    --b-color: #646e68;
+    --c-color: #FEFAE0;
+    --t-color: #525d80;
+    --g-color: #A05C7B;
+    font-family: 'Libertinus Serif'
+}
+
+body {
+    background-color: var(--b-color);
+    color: var(--t-color);
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 8px 0px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+
+h3 {
+    margin: 8px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 10px 10px 10px;
+}
+
+ul {
+    margin: 10px 10px 10px 10px;
+}
+
+li {
+    font-size: 1.2rem;
+}
+
+img {
+    margin: 8px auto 8px 0px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border: 6px solid var(--g-color);
+}
+
+a {
+    color: var(--t-color);
+    text-decoration: none;
+}
+
+a.inline {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--g-color);
+    text-decoration: underline;
+}
+
+p a {
+    color: var(--g-color);
+    text-decoration: underline;
+}
+
+li a {
+    color: var(--g-color);
+    text-decoration: underline;
+}
+
+p a:hover {
+    text-decoration-thickness: 2px;
+}
+
+li a:hover {
+    text-decoration-thickness: 2px;
+}
+
+button {
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: 'Questrial', sans-serif;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.button.inline {
+    border: 0px none;
+    background-color: #fff7e6
+}
+
+.button.small {
+    color: black;
+    font-size: 1rem;
+    padding: 4px;
+    margin: 8px 0px;
+    width: 20%;
+}
+
+.input {
+    width: 50%;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.textarea {
+    width: 50%;
+    height: 120px;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.control {
+    padding: 5px;
+}
+
+.flex_lr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.ml-embedded {
+    padding: 20px 0px 0px 0px;
+    color: #1a1a1a;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) { 
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .input {
+        width: 95%;
+    }
+    
+    .textarea {
+        width: 95%;
+        height: 120px;
+    }
+    
+    button {
+        font-size: 0.7rem;
+    }
+
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto 20px 0;
+    padding: 2px 20px 20px 20px;
+    background-color: var(--c-color);
+    overflow: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.social-icons a {
+    color: var(--t-color);
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+}
+
+.social-icons a:hover {
+    color: var(--g-color);
+}
+
+.social-icons svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+.head {
+    max-width: 900px;
+    margin: 20px auto 20px 0;
+    padding: 2px 20px 2px 20px;
+    background-color: var(--c-color);
+}
+
+.layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 940px; /* +20px for padding to match */
+    margin: 20px auto 20px 0;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    flex: 0 0 240px;
+    padding: 2px 20px 20px 20px;
+    background-color: var(--c-color);
+}
+
+.content,
+.sections {
+    box-sizing: border-box;
+    flex: 1;
+    min-width: 0;
+}
+
+.content,
+.panel {
+    padding: 2px 20px 20px 20px;
+    background-color: var(--c-color);
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.map {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    overflow: visible; /* labels near the edge aren't clipped */
+}
+
+.map-edge {
+    stroke: var(--t-color);
+    stroke-width: 1px;
+    stroke-dasharray: 2 2;
+}
+
+/* Invisible, fat, and hoverable: gives thin lines and small nodes a target
+   worth aiming at, on a mouse or a fingertip. */
+.map-hit {
+    fill: transparent;
+    stroke: transparent;
+    stroke-width: 4;
+    pointer-events: all;
+}
+
+.map-edge-group:hover .map-edge {
+    stroke-dasharray: none;
+    stroke: var(--g-color);
+}
+
+.map-edge-label {
+    fill: var(--t-color);
+    font-size: 3px; /* user units: the viewBox is 100 wide */
+    text-anchor: middle;
+    dominant-baseline: middle;
+    stroke: var(--c-color);
+    stroke-width: 1.2px;
+    stroke-linejoin: round;
+    paint-order: stroke fill;
+    pointer-events: none;
+}
+
+/* Touch devices have no hover, so they keep the labels on permanently.
+   Anything with a real pointer reveals them on hover instead. */
+@media (hover: hover) {
+
+    .map-edge-label {
+        opacity: 0;
+        transition: opacity 120ms ease-in-out;
+    }
+
+    .map-edge-group:hover .map-edge-label {
+        opacity: 1;
+    }
+
+}
+
+.map-node {
+    fill: var(--b-color);
+    stroke: var(--t-color);
+    stroke-width: 0.4;
+}
+
+.map-label {
+    fill: var(--t-color);
+    font-size: 3.4px; /* user units: the viewBox is 100 wide */
+    text-anchor: middle;
+    stroke: var(--c-color);
+    stroke-width: 1.2px;
+    stroke-linejoin: round;
+    paint-order: stroke fill;
+}
+
+.map a .map-node,
+.map a .map-label {
+    cursor: pointer;
+}
+
+.map a:hover .map-node {
+    fill: var(--g-color);
+}
+
+.map a:hover .map-label {
+    fill: var(--g-color);
+}
+
+.quest-done a {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.quest-done::marker {
+    content: "\2713  "; /* checkmark in place of the bullet */
+}
+
+.entry {
+    overflow: auto; /* contains the floated image within this entry */
+    scroll-margin-top: 20px; /* breathing room when jumped to via #anchor */
+}
+
+.entry-image {
+    float: right;
+    width: 140px;
+    max-width: 40%;
+    margin: 8px 0 8px 16px;
+}
+
+@media (max-width: 600px) {
+
+    .layout {
+        flex-direction: column;
+        /* Column flex makes align-items horizontal, so the base flex-start
+           would shrink each panel to its content width. */
+        align-items: stretch;
+    }
+
+    .sidebar {
+        flex: none;
+        width: 100%;
+    }
+
+    .entry-image {
+        max-width: 33%;
+    }
+
+    /* Screen space is scarce: let the map bleed out through the 20px of
+       panel padding on each side and run edge to edge. */
+    .map {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    /* The map scales with its container, so bump the type back up to a
+       readable size on a narrow screen. */
+    .map-label {
+        font-size: 4.5px;
+    }
+
+    .map-edge-label {
+        font-size: 4px;
+    }
+
+}
+
+.foot {
+    max-width: 900px;
+    margin: 20px auto 20px auto;
+    padding: 2px 20px 2px 20px;
+    background-color: var(--c-color);
+    font-size: 0.9rem;
+}

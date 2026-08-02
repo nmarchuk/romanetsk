@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ stylesheet | default: '/style_light.css' | url }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <title>{{ title | default: " home" }} | Romanetsk Campaign</title>
+    </head>
+    <body>
+        <div class="head">
+            <div class="flex_lr">
+                <a href="{{ "/" | url }}"><h1>Romanetsk Campaign</h1></a>
+            </div>
+        </div>
+        <div class="layout">
+            <aside class="sidebar">
+                <h2><a href="{{ "/map/" | url }}">Map</a></h2>
+                <h2>Locations</h2>
+                <ul>
+                    {% for location in collections.locations reversed %}
+                    <li><a href="{{ location.url }}">{{ location.data.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                <h2>Diaries</h2>
+                <ul>
+                    {% for diary in collections.diaries reversed %}
+                    <li><a href="{{ diary.url }}">{{ diary.data.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                <h2>Quests</h2>
+                <ul>
+                    {% for quest in collections.quests %}{% unless quest.data.completed %}
+                    <li><a href="{{ quest.url }}">{{ quest.data.title }}</a></li>
+                    {% endunless %}{% endfor %}
+                    {% for quest in collections.quests %}{% if quest.data.completed %}
+                    <li class="quest-done"><a href="{{ quest.url }}">{{ quest.data.title }}</a></li>
+                    {% endif %}{% endfor %}
+                </ul>
+            </aside>
+            <main class="{{ content_class | default: 'content' }}">
+                {{ content }}
+            </main>
+        </div>
+    </body>
+</html>
