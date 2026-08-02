@@ -1,6 +1,6 @@
 ---
 layout: blog_layout.html
-stylesheet: style_light.css
+stylesheet: /style_light.css
 title: Welcome to Romanetsk
 ---
 

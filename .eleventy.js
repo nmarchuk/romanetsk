@@ -66,4 +66,11 @@ export default function(eleventyConfig) {
     eleventyConfig.addShortcode("npc", entryShortcode("npc", "npcs"));
     eleventyConfig.addShortcode("place", entryShortcode("place", "places"));
     eleventyConfig.addShortcode("event", entryShortcode("event", "events"));
+
+    return {
+        // The site lives at nmarchuk.github.io/romanetsk/, so every URL built
+        // by the `url` filter needs that prefix. Change to "/" if this ever
+        // moves to a custom domain.
+        pathPrefix: "/romanetsk/"
+    };
 }

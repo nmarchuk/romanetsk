@@ -21,22 +21,22 @@
                 <h2>Locations</h2>
                 <ul>
                     {% for location in collections.locations reversed %}
-                    <li><a href="{{ location.url }}">{{ location.data.title }}</a></li>
+                    <li><a href="{{ location.url | url }}">{{ location.data.title }}</a></li>
                     {% endfor %}
                 </ul>
                 <h2>Diaries</h2>
                 <ul>
                     {% for diary in collections.diaries reversed %}
-                    <li><a href="{{ diary.url }}">{{ diary.data.title }}</a></li>
+                    <li><a href="{{ diary.url | url }}">{{ diary.data.title }}</a></li>
                     {% endfor %}
                 </ul>
                 <h2>Quests</h2>
                 <ul>
                     {% for quest in collections.quests %}{% unless quest.data.completed %}
-                    <li><a href="{{ quest.url }}">{{ quest.data.title }}</a></li>
+                    <li><a href="{{ quest.url | url }}">{{ quest.data.title }}</a></li>
                     {% endunless %}{% endfor %}
                     {% for quest in collections.quests %}{% if quest.data.completed %}
-                    <li class="quest-done"><a href="{{ quest.url }}">{{ quest.data.title }}</a></li>
+                    <li class="quest-done"><a href="{{ quest.url | url }}">{{ quest.data.title }}</a></li>
                     {% endif %}{% endfor %}
                 </ul>
             </aside>

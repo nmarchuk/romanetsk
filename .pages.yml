@@ -23,7 +23,7 @@ content:
         type: string
         required: true
       - name: body
-        label: Entry
+        label: Entries (add *** to add a horizontal line, organize however you want)
         type: text
         description: Markdown. You can use a shortcode like {% npc "romanetsk/mustafar_khanakin" %} to link to another place, npc, or event.
 
@@ -49,7 +49,7 @@ content:
       - name: completed
         label: Completed
         type: boolean
-        description: Completed quests drop to the bottom of the sidebar list, struck through.
+        description: Is the quest completed?
       - name: body
         label: Description
         type: text
@@ -92,7 +92,7 @@ content:
       - name: image
         label: Portrait
         type: image
-        description: Optional. Floats to the right of the NPC's description.
+        description: Optional. Appears on that NPC's section.
       - name: body
         label: Description
         type: text
@@ -138,11 +138,11 @@ content:
       - name: year
         label: Year
         type: number
-        description: Shown before the title on the location page. Display only.
+        description: Shown before the title on the location page. It's only for the display.
       - name: order
         label: Order
         type: number
-        description: Low to high. This is what actually sorts the timeline.
+        description: Higher numbers appear later on the timeline.
       - name: body
         label: Description
         type: text
