@@ -5,7 +5,13 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("style_light.css");
     eleventyConfig.addPassthroughCopy("assets");
 
-    eleventyConfig.setFrontMatterParsingOptions({ excerpt: true });
+    // The default excerpt separator is "---", which Eleventy strips out of the
+    // body. That eats markdown table delimiter rows and horizontal rules, so
+    // use a marker that can't collide with real content.
+    eleventyConfig.setFrontMatterParsingOptions({
+        excerpt: true,
+        excerpt_separator: "<!-- excerpt -->"
+    });
 
     // "romanetsk" from ./locations/romanetsk.md or ./locations/romanetsk/npcs/x.md
     function locationFromInputPath(inputPath) {
@@ -62,6 +68,63 @@ export default function(eleventyConfig) {
             return `<a href="${url}#${type}-${slug}">${label || title || prettifySlug(slug)}</a>`;
         };
     }
+
+    // "Mixing Potions; Potion Miscibility" -> "mixing-potions-potion-miscibility"
+    function headingSlug(text) {
+        return text
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, "")
+            .trim()
+            .replace(/\s+/g, "-");
+    }
+
+    // Two headings with the same words get -2, -3, and so on.
+    function uniqueSlug(slug, seen) {
+        const count = seen.get(slug) || 0;
+        seen.set(slug, count + 1);
+        return count ? `${slug}-${count + 1}` : slug;
+    }
+
+    // Give every markdown heading an id so a table of contents can link to it.
+    eleventyConfig.amendLibrary("md", md => {
+        md.core.ruler.push("heading_ids", state => {
+            const seen = new Map();
+            state.tokens.forEach((token, index) => {
+                if (token.type === "heading_open") {
+                    token.attrSet("id", uniqueSlug(headingSlug(state.tokens[index + 1].content), seen));
+                }
+            });
+        });
+    });
+
+    // {% toc %} builds a contents list from the page's own # and ## headings.
+    eleventyConfig.addShortcode("toc", function() {
+        const body = fs.readFileSync(this.page.inputPath, "utf8")
+            .replace(/^---\r?\n[\s\S]*?\r?\n---/, "");
+        const seen = new Map();
+        const items = [];
+        let inFence = false;
+
+        for (const line of body.split(/\r?\n/)) {
+            if (/^\s*(```|~~~)/.test(line)) {
+                inFence = !inFence;
+                continue;
+            }
+            // Every level is slugged, so the numbering of repeated headings stays
+            // in step with the markdown-it rule, but only 1 and 2 get listed.
+            const heading = inFence ? null : /^(#{1,6})\s+(.+?)\s*#*\s*$/.exec(line);
+            if (heading && !line.includes("Table of Contents")) {
+                const text = heading[2].replace(/[*_`]/g, "");
+                const id = uniqueSlug(headingSlug(text), seen);
+                if (heading[1].length <= 2) {
+                    items.push(`<li class="toc-${heading[1].length}"><a href="#${id}">${text}</a></li>`);
+                }
+            }
+        }
+
+        // One line, so markdown-it leaves it alone when included from a .md file.
+        return items.length ? `<nav class="toc"><ul>${items.join("")}</ul></nav>` : "";
+    });
 
     eleventyConfig.addShortcode("npc", entryShortcode("npc", "npcs"));
     eleventyConfig.addShortcode("place", entryShortcode("place", "places"));
