@@ -409,6 +409,19 @@ button {
         max-width: 33%;
     }
 
+    /* A first column that can't wrap sets a floor on the table's width, and on
+       a phone that floor is wider than the screen. Ranges wrapping is the
+       lesser evil. */
+    th:first-child,
+    td:first-child {
+        white-space: normal;
+    }
+
+    th,
+    td {
+        padding: 6px 5px;
+    }
+
     /* Screen space is scarce: let the map bleed out through the 20px of
        panel padding on each side and run edge to edge. */
     .map {

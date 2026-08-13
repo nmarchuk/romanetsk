@@ -222,7 +222,7 @@ Magic users can apply to be a part of the Magical Energetic Tax and Excise Recov
 
 ### Festival-based estimated Taxes
 
-To prevent a large sum of money being owed at the end of the year, all businesses and citizens with income over 10000 GP/year are required to file estimated taxes on the day of each festival. If estimated taxes are not filed, and a citizen owes more than 10000 GP, a penalty of 1% of the money owed will be assessed.
+To prevent a large sum of money being owed at the end of the year, all businesses and citizens with income over 10000 GP/year are required to file estimated taxes on the day of each festival. If estimated taxes are not filed, and a citizen has a taxable income of more than 10000 GP, a penalty of 1% of the money owed will be assessed.
 
 # Index of Forms
 
