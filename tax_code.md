@@ -300,3 +300,4 @@ All forms are filed at the Hall of Ledgers.
 | 603 | Petition for Forgiveness Based on Resurrection |
 | 604 | Declaration of Immortality |
 | 605 | Declaration of Tithing |
+| 606 | This Form Does Not Exist |
