@@ -1,13 +1,16 @@
 ---
 title: Connor
 ---
+# Fivarr 13, 1492
 
-# February 13, 1492
+I have been assigned to my first field task. There has been a complication in one of the teams, and my supervisor believes that I may be of some help. I was given a bunk in the lower levels, and instructed that I would meet the rest of the team at some point.
 
-Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation. Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people’s hats off—then, I account it high time to get to sea as soon as I can. This is my substitute for pistol and ball. With a philosophical flourish Cato throws himself upon his sword; I quietly take to the ship. There is nothing surprising in this. If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me.
+While their personalities seem to be ill-suited to the task of tax collection, verified by the complications of their previous mission, they are competent when it comes to violence. I have learned firsthand that my lack of field experience has direct consequences when it comes to the risk of injury, as I sustained severe injuries to multiple of my organs. 
 
-***
+It seems I must remain outside of aggressor's range at all costs, as I am susceptible to physical damage and it allows me to reasonably fry different parts of the assailant's brain before they can reach me.
 
-# February 10, 1492
+The vampire spawn known as Carmen was confusing and eccentric but proved honest and useful when it came to the reclamation of the owed taxes, which were previously stolen by bandits hired by a family member. I verified psionically this by delving into the spawn's mind. They proved useful in disarming the animated statues, which were placed to defend the stolen funds. 
 
-Ishmael is me.
+What was unexpected was the presence of a devil in the saferoom, which seemed strangely interested in the spawn, giving them a contract. After rejecting the contract, the spawn attempted to attack the devil, to safeguard the retrieval of the funds, I psionically linked to the spawn and deceived it to stop attacking, posing as it's vampire lord.
+
+Afterwards, I followed the directives of the ship captain and cleaned up the lower decks which were marred by the fighting. There were 5 corpses we had to dispose of, which we did by dumping them into the ocean upon reaching our port of choice.
