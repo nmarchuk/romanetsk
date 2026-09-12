@@ -8,12 +8,12 @@ import fs from "node:fs";
 
 const nodes = [
     { id: "romanetsk",       label: "Romanetsk",        x: 30, y: 32 },
-    { id: "karsk_headwater", label: "???",  x: 45, y: 14 },
+    { id: "donetsk",         label: "Donetsk",          x: 45, y: 14 },
 ];
 
 // An optional third entry is the edge's label. Keep it short.
 const edges = [
-    ["romanetsk", "karsk_headwater", "2d (water), 9d (land)"],
+    ["romanetsk", "donetsk", "2d (water), 9d (land)"],
 ];
 
 // ---------------------------------------------------------------------------
