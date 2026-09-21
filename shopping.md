@@ -176,14 +176,14 @@ The players can summon him by sending him a Pigeon with 10GP attached.
 
 | Potion of... | Cost |
 | --- | --- |
-| Healing | 50 gp |
-| Climbing | 75 gp |
-| Animal friendship | 100 gp |
-| Greater healing | 100 gp |
-| Water breathing | 100 gp |
-| Superior healing | 500 gp |
-| Supreme healing | 5,000 gp |
-| Invisibility | 5,000 gp |
+| Healing | 30 gp |
+| Climbing | 40 gp |
+| Animal friendship | 50 gp |
+| Greater healing | 60 gp |
+| Water breathing | 50 gp |
+| Superior healing | 350 gp |
+| Supreme healing | 4,000 gp |
+| Invisibility | 4,000 gp |
 
 ### Poisons
 
