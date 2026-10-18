@@ -4,6 +4,23 @@ stylesheet: /style_light.css
 title: Welcome to Romanetsk
 ---
 
+# Letter received
+
+To my insipid heroes: I see you’ve taken up with the monks. Nice folk, but how nice can folk be when they are tax exempt? There’s little accountability on that mountain.
+
+The affair with Mustafar comes as grave news to me. Certainly the non-deductible vacation property was a great lead that only a great Tax Manager could have found. And you acted bravely, no doubt, by chasing the wizard down. It is not lost to me, and to those in the Hall of Ledgers who still listen to me, that your team acted with a delicacy that is lacking in those who are under the direction of less thoughtful tax managers.
+
+Wit that said, the matter of the false Watcher is officially over. With Mustafar dead, he is no longer expected to pay his taxes. I have been informed that there have been no irregularities, and that we are to look into it no further.
+
+The Hall of Ledgers has selected your team to take on some simple cases, to be completed while you journey home to Romanetsk.
+
+Best,
+
+Evrart Guzman
+
+*Tax Manager*
+
+
 # Welcome to Romanetsk
 
 Romanetsk is a bustling metropolis where money comes first and life is cheap. Cosmopolitan and crowded, the city draws innumerable visitors from across the region.

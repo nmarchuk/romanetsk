@@ -1,6 +1,13 @@
 ---
 title: Connor
 ---
+# Letter received
+This message is addressed to Ludlow, Psychic Tax Collector, D-class: Your file has been updated. You have been selected for promotion to S-class Psychic Tax Collector. Please return to Romanetsk immediately to begin the upgrade procedure.
+
+Signed: Madeline, Psychic Tax Collector, Class LW (Letter Writer)
+
+*Note: The author of this message is lobotomized. If the message was unclear, please write back, "Unclear," and someone will assist with revisions.*
+
 # Fivarr 13, 1492
 
 I have been assigned to my first field task. There has been a complication in one of the teams, and my supervisor believes that I may be of some help. I was given a bunk in the lower levels, and instructed that I would meet the rest of the team at some point.

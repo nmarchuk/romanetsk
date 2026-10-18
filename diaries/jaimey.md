@@ -2,12 +2,26 @@
 title: Jaimey
 ---
 
-# February 13, 1492
+# Letter Received
 
-Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation. Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people’s hats off—then, I account it high time to get to sea as soon as I can. This is my substitute for pistol and ball. With a philosophical flourish Cato throws himself upon his sword; I quietly take to the ship. There is nothing surprising in this. If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me.
+Dear Magra,
+
+I am sorry to hear that your journey east has been thwarted. The High Home is close enough; surely another few hundred miles is short enough for a detour? I have fresh pork and wine for you--more wine than silly old Carmen could ever carry.
+
+Well, it is no matter. Time shall bring us together. Longevity runs in my family's blood, so I am content to wait. But still, I have heard you are a Tax Collector? I am a very wealthy man, and I know which of my wealthy friends evade taxes. I also have connections in the Grandest Council. (I have long funded philanthropic projects in Romanetsk--in fact, it was during one such philanthropic mission that I first noticed you.) Should we wed, we can leverage these connections to make you the greatest Tax Collector this nation has ever seen!
+
+As you know, Transylvania sits east of the northern reaches of Romanetsk, in a pocket of cool, wet weather isolated from the cold northwinds. I have a wonderful, well-defended castle, but of course, Romanetsk lacks a standing army, thanks to the Eternal Watchtower.
+
+It concerns me, then, that I hear rumors of an army of Harthians, Romanetsk's ancient enemy, amassing in the snowfields outside Winter's End. While I believe as much as anyone in the song of the Watcher, this is highly concerning. I have written to my friends in the Grandest Council, and have been assured there is no such army forming, and if there were, they could not invade the realm--that vital "bad luck" that befalls any enemy of the nation would inevitably ruin them.
+
+And yet, I find myself worried. Should the gate at Winter's End be breached, Transylvania would no doubt be the first region to fall. I know you must have some friends in the city government. Please tell them about my concerns.
+
+Yours forever,
+
+Count Balboni
 
 ***
 
-# February 10, 1492
+# TBD
 
-Ishmael is me.
+tbd
