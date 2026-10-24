@@ -4,6 +4,16 @@ stylesheet: /style_light.css
 title: Books
 ---
 
+# On the History of Harthians
+
+Harthia is a nation to the north of Romanetsk. A proud, independent people, they rule over a vast, largely uninhabitable expanse of ice and snow that covers much of the north of the continent of Cassiteron. Their capital Hazura sits on the icy shores of Astoria on a natural hot spring, and is said to be impregnable, for it is naturally defended by the Abrin Mountains and their glaciers. 
+
+Harthian cities are built on geothermal sites. These cities, which use massive pipes to move steam from underground to heat homes, were built by the “Grey” Harthians. The coming of magic to Cassiteron helped the Harthians raise massive underground gardens which they use to feed their small but growing population.
+
+The “Red” Harthians live on what they call “skiffs,” villages built on massive mechanical legs built to traverse the glaciers of the far north of Harthia. Magic alone is not enough to keep these machines running in the cold; it is rumored that blood taken from the giants that roam the mountains are used to power the machines.
+
+It was the Reds that once invaded Romanetsk. For the last 300 years, the Greys and the Reds have been at odds, with tensions often dissolving into outright war. The conflicts have kept Harthia poor and sparsely populated outside of the capital Hazura.
+
 # A History of Romanetsk, Years 1150-1175
 
 *Most of the book contains boring details about the quality of the harvest each year, lists of people who were granted various titles and lands, marriages of nobles, and notes on the famous artists and philosophers of the day.*

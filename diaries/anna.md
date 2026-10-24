@@ -28,10 +28,6 @@ I am sure that your salary will cover the sum. If, for some reason, you've spent
 
 As for news from the city? Well, we can catch up over dinner when you get back. We had to give the servants a temporary vacation. Your friend Tanka Jahari has graciously offered to help feed the family cats.
 
-Father and Mother
+Father
 
 ***
-
-# TBD
-
-tbd
