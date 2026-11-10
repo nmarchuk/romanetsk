@@ -2,6 +2,13 @@
 title: Jaimey
 ---
 
+# Your roommates
+
+**Ashara Davidson** - human. She is the personal trainer of the Monique Ghiy, the wife of Nevro Ghiy.
+
+**Jaimey Smith** - tortle. She works in a small rookery at a city office. While the meeting location of the Grandest Council is unknown, pigeons to them are addressed to this office.
+
+
 # Letter Received
 
 Dear Magra,

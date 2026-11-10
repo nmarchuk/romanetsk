@@ -4,6 +4,33 @@ stylesheet: /style_light.css
 title: Welcome to Romanetsk
 ---
 
+# Governance structure of Romanetsk
+
+**Grandest Council** – these are powerful mages not part of any noble family. Their workings are secret, and they don’t intervene in domestic affairs except for the most important decisions concerning the city. It is a 15-member body, but 5 of the members’ names are unknown; colloquially these are the “shadow mages.” None of the original mages from the first Grandest Council are alive – the selection process for new mages is also secret.
+
+* Ralinir Ghed
+* Ralu Theth
+* Salrom Dhast
+* Ziq Kath
+* Ritir Rer
+* Nevro Ghiy
+* Paroq Rat
+* Zorlun Tham
+* Zudo Chad
+* Vormik Daak
+* (???) – rumored owner of the psionic school
+* (???) – rumored to be a necromancer
+* (???) – rumored to be invisible
+* (???) – rumored to be posing as a nobleman to monitor the Senate
+* (???) – nothing is known about this mage.
+
+**Senate** – made up of a number of heads of households in Romanetsk from powerful merchant families. Only the most powerful families have places in the council. They handle the day to day affairs of the city. These families have a seat on the council: Schmidt, Schepp, Goddard, Blackgrip, Doorblack, Sullard, Saintignon. These families have an “alternate” appointment to the council and may be invited if a family is absent: Ivashin*, Gerard, Sunsmith, Gashari, Waywocket**, Zedd.
+
+*\*Zhenya's family*
+*\*\*Jebbeddue's family*
+
+All police are local police. Tax Collectors are generally the only people allowed to do policing functions across territories.
+
 # Letter received
 
 To my insipid heroes: I see you’ve taken up with the monks. Nice folk, but how nice can folk be when they are tax exempt? There’s little accountability on that mountain.
