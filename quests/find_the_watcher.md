@@ -1,5 +1,6 @@
 ---
 title: Find the Watcher
+completed: true
 ---
 # Find the Watcher
 
